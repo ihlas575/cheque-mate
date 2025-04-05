@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@font-face {
+    font-family: "Luxora Grotesk";
+    src: url("../fonts/LuxoraGrotesk-Book.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Albert Sans", sans-serif;
+    transition: all 175ms ease-in-out;
+}
+
+p,
+span,
+i,
+label {
+    color: #332941;
+}
+
+.title {
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 0.5px;
+    color: #121212;
+}
+
+.numeric {
+    font-family: "JetBrains Mono", serif;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 28px);
+}
+
+.swiper-pagination-bullet {
+    background: white;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fee9b2;
+}
+
+#bottomNavigationBar .active {
+    svg {
+        color: #35a7ff !important;
+    }
+
+    p {
+        color: #35a7ff !important;
+        font-weight: 600;
+    }
+}
