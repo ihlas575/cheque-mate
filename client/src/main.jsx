@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router";
 
 // Layouts
 import GuestLayout from "./layouts/GuestLayout.jsx";
@@ -13,11 +13,12 @@ import Profile from "./pages/Profile.jsx";
 import Login from "./pages/guest/Login.jsx";
 import Register from "./pages/guest/Register.jsx";
 import ForgotPassword from "./pages/guest/ForgotPassword.jsx";
+import Deposits from "./pages/Deposits.jsx";
 import Cheques from "./pages/Cheques.jsx";
+import CreateCheque from "./pages/CreateCheque.jsx";
 
 // Global CSS
 import "./assets/css/custom.css";
-import Deposits from "./pages/Deposits.jsx";
 
 createRoot(document.getElementById("root")).render(
     <BrowserRouter>
@@ -34,7 +35,10 @@ createRoot(document.getElementById("root")).render(
 
                 <Route element={<AuthLayout />}>
                     <Route index element={<Home />} />
-                    <Route path="cheques" element={<Cheques />} />
+                    <Route path="cheques" element={<Outlet />}>
+                        <Route path="all" element={<Cheques />} />
+                        <Route path="add" element={<CreateCheque />} />
+                    </Route>
                     <Route path="deposits" element={<Deposits />} />
                     <Route path="clients" element={<Clients />} />
                     <Route path="trades" element={<Trades />} />

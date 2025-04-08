@@ -1,9 +1,9 @@
+import NestedPageHeader from "@/components/NestedPageHeader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
     ArrowLeftStartOnRectangleIcon,
-    ChevronLeftIcon,
     ChevronRightIcon,
     EyeIcon,
     QuestionMarkCircleIcon,
@@ -14,20 +14,7 @@ import React from "react";
 const Profile = () => {
     return (
         <>
-            <div className="w-full fixed top-0 left-0 flex justify-between items-center border-b bg-white px-3 py-2 mb-2">
-                <button
-                    className="rounded-full p-2 cursor-pointer"
-                    onClick={() => history.back()}
-                >
-                    <ChevronLeftIcon className="size-4" />
-                </button>
-
-                <p className="title text-lg font-semibold">Profile</p>
-
-                <button className="rounded-full p-2 cursor-pointer">
-                    <QuestionMarkCircleIcon className="size-5" />
-                </button>
-            </div>
+            <NestedPageHeader title="Profile" />
 
             <div>
                 <div>

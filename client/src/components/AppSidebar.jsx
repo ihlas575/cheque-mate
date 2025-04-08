@@ -28,7 +28,7 @@ const items = [
     },
     {
         title: "Cheques",
-        url: "#",
+        url: "cheques/all",
         icon: Tickets,
     },
     {

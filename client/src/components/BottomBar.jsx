@@ -21,7 +21,7 @@ const BottomBar = () => {
 
     return (
         <div
-            className="fixed bottom-0 left-0 z-50 w-full grid grid-cols-5 border-t shadow-xl bg-white md:hidden"
+            className="fixed bottom-0 left-0 z-50 w-full grid grid-cols-5 border-t shadow-xl bg-white"
             id="bottomNavigationBar"
             style={{
                 borderTop: "0.5px solid #dbdbdb",
@@ -44,12 +44,12 @@ const BottomBar = () => {
             </Link>
 
             <Link
-                to="/cheques"
+                to="/cheques/all"
                 className={`w-full pointer-cursor py-3 px-3 ${
-                    activeRoute.pathname === "/cheques" && "active"
+                    activeRoute.pathname === "/cheques/all" && "active"
                 }`}
             >
-                {activeRoute.pathname === "/cheques" ? (
+                {activeRoute.pathname === "/cheques/all" ? (
                     <ChequesFilledIcon className="size-5 mx-auto mb-1 text-stone-800" />
                 ) : (
                     <ChequesIcon className="size-5 mx-auto mb-1 text-stone-800" />
