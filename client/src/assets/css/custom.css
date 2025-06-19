@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #3da9fc;
+    --secondary-color: #fbdd74;
+    --accent-color: #3d5a80;
+}
+
+.input {
+    &:focus,
+    &:focus-within {
+        outline: none !important;
+        border: 0.75px solid var(--primary-color) !important;
+        outline-offset: 0px !important;
+        isolation: isolate;
+    }
+}
+
+.btn-primary {
+    --btn-color: var(--primary-color);
+    --btn-fg: white;
+}

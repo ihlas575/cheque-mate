@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-color: #3da9fc;
+    --secondary-color: #fbdd74;
+    --accent-color: #3d5a80;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter.ttf");
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/manrope.ttf");
+}
+
+@font-face {
+    font-family: "Jetbrains Mono";
+    src: url("../fonts/jetbrains-mono.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    color: #293241;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Manrope", sans-serif;
+    color: #33272a;
+    font-weight: 600;
+}
+/* 
+.jdsjfs {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 500;
+} */
+
+.menu .active {
+    color: var(--primary-color);
+}
