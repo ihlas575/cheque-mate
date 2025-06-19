@@ -1,7 +1,7 @@
 const Home = () => {
     return (
-        <div className="pb-20 px-5">
-            <div className="mt-8">
+        <div className="bg-white px-5 py-5 rounded shadow">
+            <div>
                 <h1 className="text-2xl !font-medium mb-2">
                     Get started with Tailwind CSS
                 </h1>

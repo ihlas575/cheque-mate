@@ -9,7 +9,7 @@ import { NavLink } from "react-router";
 
 const MenuBar = () => {
     return (
-        <div className="menu fixed bottom-0 w-full md:w-92 grid grid-cols-5 items-center bg-white select-none border-gray-300 border-t shadow-2xl">
+        <div className="menu fixed bottom-0 w-full md:w-96 grid grid-cols-5 items-center bg-white select-none border-gray-300 border-t shadow-2xl">
             <NavLink
                 to="/"
                 className={({ isActive }) =>

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --primary-color: #3da9fc;
+    --primary-bg-color: #0c97fa;
+    --primary-fg-color: #ffffff;
+    --primary-text-color: #0c97fa;
     --secondary-color: #fbdd74;
     --accent-color: #3d5a80;
 }
@@ -23,12 +25,13 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Albert Sans", sans-serif;
 }
 
 body {
     color: #293241;
     font-size: 14px;
+    background-color: #293241 !important;
 }
 
 h1,
@@ -37,16 +40,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Manrope", sans-serif;
+    font-family: "Inter", sans-serif;
     color: #33272a;
     font-weight: 600;
 }
-/* 
-.jdsjfs {
-    font-family: "Albert Sans", sans-serif;
-    font-weight: 500;
-} */
 
 .menu .active {
-    color: var(--primary-color);
+    color: var(--primary-text-color);
 }

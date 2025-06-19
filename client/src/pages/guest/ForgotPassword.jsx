@@ -1,4 +1,4 @@
-import { AtSign } from "lucide-react";
+import { AtSign, RotateCcw } from "lucide-react";
 import { NavLink } from "react-router";
 
 const ForgotPassword = () => {
@@ -10,7 +10,7 @@ const ForgotPassword = () => {
                     alt="Logo"
                     className="w-22 mx-auto mb-4"
                 />
-                <h1 className="text-[20px] text-center font-bold mb-[2px]">
+                <h1 className="text-[20px] text-center font-bold mb-[1px]">
                     Welcome to Cheque Mate!
                 </h1>
                 <p className="text-xs font-light text-center">
@@ -18,28 +18,33 @@ const ForgotPassword = () => {
                 </p>
             </div>
 
-            <fieldset className="fieldset">
-                <label for="email" className="fieldset-legend font-medium py-1">
-                    Email Address *
-                </label>
-                <label className="input w-full mt-0">
-                    <AtSign strokeWidth={1.5} size={18} />
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="john.doe@gmail.com"
-                    />
-                </label>
-            </fieldset>
+            <form>
+                <fieldset className="fieldset">
+                    <label
+                        for="email"
+                        className="fieldset-legend font-medium py-1"
+                    >
+                        Email Address *
+                    </label>
+                    <label className="input w-full mt-0">
+                        <AtSign strokeWidth={1.5} size={18} />
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="john.doe@gmail.com"
+                        />
+                    </label>
+                </fieldset>
 
-            <button class="btn btn-primary w-full mt-5">
-                {/* <LogIn strokeWidth={1.6} size={15} /> */}
-                Reset Password
-            </button>
+                <button class="btn btn-primary w-full text-[12px] font-semibold mt-5">
+                    <RotateCcw strokeWidth={1.75} size={15} />
+                    Reset Password
+                </button>
+            </form>
 
-            <p className="text-xs text-center mt-10">
+            <p className="text-sm text-center mt-10">
                 Go back to
-                <NavLink to="/sign-up" className="link ml-1">
+                <NavLink to="/sign-up" className="link text-primary ml-1">
                     Sign In!
                 </NavLink>
             </p>

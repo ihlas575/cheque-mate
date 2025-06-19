@@ -1,8 +1,6 @@
-import React from "react";
-
 const MoreSetting = () => {
     return (
-        <div>
+        <div className="bg-white px-5 py-5 rounded shadow">
             <p>This is More Page!</p>
         </div>
     );
